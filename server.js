@@ -7,8 +7,8 @@ const fs = require('fs');
 
 
 const client = new Commando.Client({
-  owner: '444454206800396309', 
-  commandPrefix: 'dy!', 
+  owner: '335035386923581440', 
+  commandPrefix: 'p!', 
   disableEveryone: true,
   unknownCommandResponse: false
 });
