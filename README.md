@@ -1,2 +1,1 @@
-# pp
-ppk
+bot created by sharif
