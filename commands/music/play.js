@@ -27,7 +27,7 @@ module.exports = class PlayCommand extends Command {
         });
 
         this.queue = new Map();
-        this.youtube = new YouTube(googleapikey);
+        this.youtube = new YouTube("AIzaSyChN9LjaACQp7kIupPCn86au7nPamAAtGA");
     }
 
     async run(msg, { url }) {
