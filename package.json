@@ -70,7 +70,9 @@
     "js-beautify": "^1.7.5", 
     "dotenv": "^6.0.0", 
     "request-promise-native": "^1.0.5", 
-    "escape-string-regexp": "^1.0.5"
+    "escape-string-regexp": "^1.0.5",
+    "logs": "^1.1.2",
+    "debug": "^3.1.0"
   },
   "engines": {
     "node": "8.x"
