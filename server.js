@@ -8,7 +8,7 @@ const fs = require('fs');
 
 const client = new Commando.Client({
   owner: '335035386923581440', 
-  commandPrefix: 'p!', 
+  commandPrefix: 't!', 
   disableEveryone: true,
   unknownCommandResponse: false
 });
@@ -65,7 +65,7 @@ client.on('commandError', (command, err) => console.log('[COMMAND ERROR]', comma
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}`)
-  client.user.setActivity('dy!help | By Sharif#2769');
+  client.user.setActivity('t!help | By _Brickmaster_#0218');
 });
 
 client.login(process.env.TOKEN);
