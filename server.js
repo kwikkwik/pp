@@ -36,7 +36,6 @@ client.registry
   ['group5', 'Moderation'], 
   ['group6', 'NSFW'], 
   ['commands', 'Bot Owner Only'], 
-  ['test', 'Not released'], 
 ]) 
  .registerDefaultCommands({
     help: false,
@@ -65,7 +64,7 @@ client.on('commandError', (command, err) => console.log('[COMMAND ERROR]', comma
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}`)
-  client.user.setActivity('t!help | By Brickmaster#2000');
+  client.user.setActivity('MAINTENANCE');
 });
 
 client.login(process.env.TOKEN);
