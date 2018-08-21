@@ -36,6 +36,7 @@ client.registry
   ['group5', 'Moderation'], 
   ['group6', 'NSFW'], 
   ['commands', 'Bot Owner Only'], 
+  ['test', 'Not released'], 
 ]) 
  .registerDefaultCommands({
     help: false,
