@@ -55,7 +55,7 @@ client.on('disconnect', event => {
 	process.exit(0);
 });
 
-client.on('commandRun', command => console.log(`{COMMAND} Ran command ${command.groupID}:${command.memberName}.`));
+client.on('commandRun', command => console.log(`${message.author} Ran command ${command.groupID}:${command.memberName}.`));
 
 client.on('error', err => console.error('[ERROR]', err));
 
@@ -65,7 +65,7 @@ client.on('commandError', (command, err) => console.log('[COMMAND ERROR]', comma
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}`)
-  client.user.setActivity('t!help | By _Brickmaster_#0218');
+  client.user.setActivity('t!help | By Brickmaster#2000');
 });
 
 client.login(process.env.TOKEN);
