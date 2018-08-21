@@ -54,7 +54,7 @@ client.on('disconnect', event => {
 	process.exit(0);
 });
 
-client.on('commandRun', command => console.log(`${message.author} Ran command ${command.groupID}:${command.memberName}.`));
+client.on('commandRun', command => console.log(`Ran command ${command.groupID}:${command.memberName}.`));
 
 client.on('error', err => console.error('[ERROR]', err));
 
