@@ -32,7 +32,7 @@ module.exports = class botinfoCommand extends Command {
         embed.addField('Node', `${process.version}`)
         embed.addField('Library', 'discord.js')
         embed.addField('Operating System', `${os.platform} ${arch}`)
-	embed.addField('Usefull link:', '[Invite me](481404594308775956)
+	embed.addField('Usefull link:', '[Invite me](https://discordapp.com/oauth2/authorize?client_id=481404594308775956&scope=bot&permissions=2146958591)
         embed.setFooter(`Requested by: ${msg.author.tag}`)
 	    code: 'AsciiDoc'
         return msg.embed(embed);
