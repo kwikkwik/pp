@@ -46,8 +46,8 @@ client.registry
 
 .registerCommandsIn(path.join(__dirname, 'commands'));
 
-process.on('unhandleRejection', e => this.client.channels.get('470712851183435786').send(e))
-.on('uncaughtException', e => this.client.channels.get('470712851183435786').send(e));
+process.on('unhandleRejection', e => this.client.channels.get('472733185323696128').send(e))
+.on('uncaughtException', e => this.client.channels.get('472733185323696128').send(e));
 
 client.on('disconnect', event => {
 	console.error(`[DISCONNECT] Disconnected with code ${event.code}.`);
