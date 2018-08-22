@@ -1,6 +1,7 @@
 const Commando = require('discord.js-commando');
 const path = require('path');
 const DBL = require("dblapi.js");
+const moment = require("moment");
 const music = require('discord.js-music-v11');
 const emojis = require('emoji-regex');
 const fs = require('fs');
@@ -65,7 +66,11 @@ client.on('commandError', (command, err) => console.log('[COMMAND ERROR]', comma
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}`)
-  client.user.setActivity('MAINTENANCE');
+      function randomStatus() {
+        let status = [`${moment().utcOffset('+0700').format("HH:mm A")} WIB`, `${moment().utcOffset('+0900').format("HH:mm A")} WIT`, `${moment().utcOffset('+0800').format("HH:mm A")} WITA`, "iHH.CTeam | MasterBotTeam"]
+          let rstatus = Math.floor(Math.random() * status.length);
+        client.user.setActivity(status[rstatus], {type: 'WATCHING'});
+	}; setInterval(randomStatus, 30000)
 });
 
 client.login(process.env.TOKEN);
