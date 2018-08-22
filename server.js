@@ -67,10 +67,10 @@ client.on('commandError', (command, err) => console.log('[COMMAND ERROR]', comma
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}`)
       function randomStatus() {
-        let status = [`${moment().utcOffset('+0700').format("HH:mm A")} WIB`, `${moment().utcOffset('+0900').format("HH:mm A")} WIT`, `${moment().utcOffset('+0800').format("HH:mm A")} WITA`, "iHH.CTeam | MasterBotTeam"]
+        let status = [`${moment().utcOffset('+0700').format("HH:mm")} WIB`, `${moment().utcOffset('+0900').format("HH:mm")} WIT`, `${moment().utcOffset('+0800').format("HH:mm")} WITA`, "iHH.CTeam | MasterBotTeam"]
           let rstatus = Math.floor(Math.random() * status.length);
         client.user.setActivity(status[rstatus], {type: 'WATCHING'});
-	}; setInterval(randomStatus, 30000)
+	}; setInterval(randomStatus, 25000)
 });
 
 client.login(process.env.TOKEN);
